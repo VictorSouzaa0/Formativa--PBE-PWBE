@@ -1,49 +1,61 @@
 import styles from '../modules/Aside.module.css';
 import teacher from '../assets/images/teacher.png';
+import redLogo from '../assets/images/Red-logo.png'
 import {BsGeoAltFill} from 'react-icons/bs';
 import {BsCalendarFill} from 'react-icons/bs';
 import {BsPersonFill} from 'react-icons/bs';
+import { BsArrowLeftSquare} from 'react-icons/bs'
 
 export function Aside({onSelectSection}){
     return (
       <aside className={styles.container}>
           <header>
             <img className={styles.userPicture} src={teacher} />
-            <br />
+            <br /><br /><br />
             <p className={styles.titleT}><strong>Victor Renato De Souza</strong></p>
             <p>Professor(a)</p>
             <br />
           </header>
           <section className={styles.containerButtons}>
-              <div 
+              <button 
               className={styles.button}
-              onclick={() => onSelectSection("Reservations"/*Reservas */)}
+              onclick={() => onSelectSection("Reservas"/*Reservas */)}
               >
                 <BsGeoAltFill className={styles.icons}/>
                 Reservas
-              </div>
+              </button>
               <br />
-              <div
+              <button
               className={styles.button}
-              onlcik={() => onSelectSection("Scheduling"/*Agendamento */)}
+              onlcik={() => onSelectSection("Agendamento"/*Agendamento */)}
               >
                 <BsCalendarFill className={styles.icons}/>
                   Agendamento
-              </div>
+              </button>
               <br />
-              <div
+              <button
               className={styles.button}
-              onlcik={()=> onSelectSection("Teacher")}
+              onlcik={()=> onSelectSection("Professor")}
               >
                 <BsPersonFill className={styles.icons}/>
                 Professor
-              </div>
-              <div
-              
-              >
+              </button>
 
-              </div>
           </section>
+          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+          <br /><br /><br />
+          
+          <footer>
+          <button
+              className={styles.button}
+              onclick={() => onSelectSection("Login")}
+              >
+                <BsArrowLeftSquare className={styles.icons}/>
+                sair
+              </button>
+              <br />
+              <img className={styles.logo} src={redLogo} />
+          </footer>
       </aside>
     )
 }

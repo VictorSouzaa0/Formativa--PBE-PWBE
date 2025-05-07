@@ -1,11 +1,12 @@
 .gridConteiner {
-  background-color: #ffffff;
+  background-color: #EEF1F5;
   display: grid;
   height: 100vh;
   grid-template-columns: 200px 1fr;
   grid-template-rows: 75px 1fr 30px;
   grid-template-areas: 
-      'cabecalho cabecalho'
-      'lateral principal'
-      'rodape rodape';
+      'Header Header'
+      'Aside Main'
+      'Footer Footer';
 }
+

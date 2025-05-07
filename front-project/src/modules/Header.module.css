@@ -1,0 +1,16 @@
+.container{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 50px;
+}
+
+.title{
+  font-size: 1.5rem;
+  color: black;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: bold;
+}

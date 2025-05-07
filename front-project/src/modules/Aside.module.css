@@ -1,7 +1,9 @@
-aside{
-    width: 200px;
+
+header{
+    font-size: 13px;
 }
 .container{
+    width: 200px;
     background-color: white;
     border-radius: 10px;
     margin: 10px;
@@ -11,16 +13,21 @@ aside{
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: bold;
+    height: 100vh;
 }
 
 
 .containerButtons{
     max-width: 100%;
-    gap: 10px;
 }
 .userPicture{
     border-radius: 50%;
+    width: 110px;
     max-width: 100%;
+}
+
+.logo{
+    width: 150px;
 }
 
 .button{    
@@ -29,19 +36,16 @@ aside{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 150px;
+    width: 70x;
     height: 50px;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 12px;
 }
+
 
 .button:hover{
     background-color: rgb(0, 0, 0);
     color:rgb(255, 255, 255);
     cursor: pointer;
-}
-
-.icons{
-    margin-left: 6px;
 }
