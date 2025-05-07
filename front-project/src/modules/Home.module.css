@@ -1,0 +1,11 @@
+.gridConteiner {
+  background-color: #ffffff;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 75px 1fr 30px;
+  grid-template-areas: 
+      'cabecalho cabecalho'
+      'lateral principal'
+      'rodape rodape';
+}
