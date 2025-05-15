@@ -5,8 +5,10 @@ import {BsGeoAltFill} from 'react-icons/bs';
 import {BsCalendarFill} from 'react-icons/bs';
 import {BsPersonFill} from 'react-icons/bs';
 import { BsArrowLeftSquare} from 'react-icons/bs'
+import { useNavigate } from 'react-router-dom';
 
 export function Aside({onSelectSection}){
+  const navigate = useNavigate();
     return (
       <aside className={styles.container}>
           <header>
@@ -19,7 +21,7 @@ export function Aside({onSelectSection}){
           <section className={styles.containerButtons}>
               <button 
               className={styles.button}
-              onclick={() => onSelectSection("Reservas"/*Reservas */)}
+              onClick={() => onSelectSection("Reservas"/*Reservas */)}
               >
                 <BsGeoAltFill className={styles.icons}/>
                 Reservas
@@ -27,7 +29,7 @@ export function Aside({onSelectSection}){
               <br />
               <button
               className={styles.button}
-              onlcik={() => onSelectSection("Agendamento"/*Agendamento */)}
+              onClick={() => onSelectSection("Agendamento"/*Agendamento */)}
               >
                 <BsCalendarFill className={styles.icons}/>
                   Agendamento
@@ -35,7 +37,7 @@ export function Aside({onSelectSection}){
               <br />
               <button
               className={styles.button}
-              onlcik={()=> onSelectSection("Professor")}
+              onClick={()=> onSelectSection("Professor")}
               >
                 <BsPersonFill className={styles.icons}/>
                 Professor
@@ -48,7 +50,7 @@ export function Aside({onSelectSection}){
           <footer>
           <button
               className={styles.button}
-              onclick={() => onSelectSection("Login")}
+              onClick={() => navigate("/")}
               >
                 <BsArrowLeftSquare className={styles.icons}/>
                 sair

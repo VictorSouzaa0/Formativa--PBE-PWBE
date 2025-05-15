@@ -18,7 +18,7 @@
   font-style: bold;
 }
 
-form{
+.formLogin{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,7 +32,7 @@ form{
 
 }
 
-input{
+.input{
   width: 100%;
   width: 300px;
   padding: 10px;
@@ -40,11 +40,13 @@ input{
   border: none;
   border-radius: 5px;
   border: 2px solid #ffffff;
-  border-color: white;
+  border-color: white;  
   background-color: #474747;
   color: white;
 }
-button{
+
+
+.access{
   background-color: #FF0000;
   color: white;
   border: none;
@@ -53,7 +55,7 @@ button{
   cursor: pointer;
   font-size: 20px;
   width: 200px;
-}
+} 
 
 .logo{
     width: 109px;

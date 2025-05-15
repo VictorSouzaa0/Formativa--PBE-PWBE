@@ -29,7 +29,7 @@ export function Login() {
       
       <div className={styles.container}>
         <title>Login</title>
-      <form > 
+      <form className={styles.formLogin}> 
       <img className={styles.logo}src={logo}/>
       <h1>Login </h1>
       <br />
@@ -39,14 +39,14 @@ export function Login() {
           <label htmlFor="email">Email:</label>
           {/* <p>{errors.email.message}</p> */}
           <br />
-          <input type="text" {...register('email')}/>
+          <input className={styles.input} type="text" {...register('email')}/>
           <br />
           <label htmlFor="password">Senha:</label>
           <br />
-          <input type="password"{...register('password')} />
+          <input className={styles.input}  type="password"{...register('password')} />
         </div>
         <br />
-        <button>Acessar</button>
+        <button className={styles.access} onClick={userAutenticate}>Acessar</button>
         <br />
         <p><strong>Esqueceu a senha?</strong></p>
         <br />
