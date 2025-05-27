@@ -52,7 +52,6 @@ export function MainPages({section}){
                     </select>
             </form>
           )
-
           }
       </main>
 )    
